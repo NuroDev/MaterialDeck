@@ -1,4 +1,4 @@
-![alt text](http://i.imgur.com/O1BYVic.png)
+![alt text](http://i.imgur.com/a1BtOTj.png)
 
 # MaterialDeck
 MaterialDeck is an extension for Google Chrome and Opera that enhances the appearance of TweetDeck to meet the standards of Google's Material Design
@@ -6,7 +6,7 @@ MaterialDeck is an extension for Google Chrome and Opera that enhances the appea
 ---------------------------------------------------------
 # CHANGELOG:
 
-__V1.0.1:__ 
+__V1.0.1:__
 Initial Port Release from FreeStyle Style.
 
 ---------------------------------------------------------

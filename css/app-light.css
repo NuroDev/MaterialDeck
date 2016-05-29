@@ -1,0 +1,446 @@
+/* TweetDeck Original CSS */
+
+@import url("https://ton.twimg.com/tweetdeck-web/web/css/app-light.2db79c379b.css");
+
+/* MaterialDeck CSS */
+body {
+    background-color: #4FC3F7!important;
+    background-image: radial-gradient(#4FC3F7, #4FC3F7)!important;
+    -webkit-transition: all .2s!important;
+    -moz-transition: all .2s!important;
+    transition: all .2s!important;
+}
+
+/** SPRITE SHEET **/
+.hearty .sprite {
+	background-image: url("https://i.imgur.com/WhaIoE4.png");
+}
+
+/** COLOURS **/
+
+.column-number, .column-nav-link:after, .is-new .column-nav-updates {
+  	/** Transparent Colour **/
+    color: transparent!important;
+}
+
+.app-search-fake, .column-nav-item, .column-head-title > span, .column-title-back, .column-header, .column-header-temp, .column-title > .txt-mute, .js-header-action > .js-column-title > .txt-mute, .column-header-link, .nav-user-info .username, .app-nav-link, .app-navigator, .app-nav-tab, .lst-launcher a, .lst-launcher > .is-disabled a, .attribution .txt-sub-antialiased, .attribution .txt-mute .txt-sub-antialiased, .icon-unread-color, .list-placeholder, .title-content > .txt-mute, .is-new .column-type-icon, span.attribution.txt-mute.txt-sub-antialiased {
+    /** White Colour **/
+  	color: #FFF!important;
+}
+
+.js-column-back > .column-head-title:hover {
+  	/** 500 LB Colour **/
+    color: #03A9F4!important;
+}
+.hearty .icon-favorite-color {
+  	/** 500 Pink Colour **/
+	color: #E91E63;
+}
+
+.txt-r-medium-green {
+  	/** A400 Green  Colour **/
+	color: #00E676;
+}
+
+/** BACKGROUND-COLOURS **/
+
+.app-columns-container, .js-column-back > .column-head-title:hover {
+  	/** White BG **/
+    background-color: #FFF!important;
+}
+
+.app-header, .app-title, .column-nav-item, .column-number, .column-header, .column-header-temp, .app-navigator, .btn-on-blue, .lst-launcher a, .lst-launcher > .is-disabled a, .inline-reply {
+  	/** 500 LB BG **/
+    background-color: #03A9F4!important;
+}
+
+.btn-positive-alt, .btn-fav.s-favorited, .s-following .follow-btn, .bg-r-light-gray {
+  	/** 600 LB BG(CUSTOM) **/
+    background-color: #2D92D6!important;
+}
+
+.lst-group .selected {
+  	/** 600 LB BG **/
+    background-color: #039BE5!important;
+}
+
+.numbered-badge, .btn-compose, .compose, .attach-compose-buttons .tweet-button, .app-search-input, .app-search-fake, .is-new .column-nav-updates  {
+	/** 700 LB BG **/
+  	background-color: #0288D1!important;
+}
+
+.js-column-scroller.js-dropdown-container.column-scroller.scroll-v, .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation, .tweet-detail-wrapper {
+  	/** 200 Grey BG **/
+    background: #EEEEEE !important;
+}
+
+.scroll-conversation {
+  	/** White BG **/
+    background: #FFF!important;
+}
+
+.stream-item {
+  	/** Transparent BG **/
+ 	background-color: transparent;
+}
+
+/** BORDERS **/
+
+.column-scroller .scroll-v .scroll-styled-v, .stream-item.js-stream-item, .tweet-detail-wrapper {
+    border-radius: 0!important;
+}
+
+.popover, input, textarea, select, .uneditable-input {
+    border-radius: 0!important;
+}
+
+.numbered-badge, .is-new .column-nav-updates  {
+	border-radius: 200px;
+}
+
+.with-nav-border-t:before {
+    border-top: 2px solid #FFF!important;
+}
+
+.lst-launcher a, .lst-launcher > .is-disabled a, .column-scroller, .column, .numbered-badge, .stream-item {
+    border: none!important;
+}
+
+.detail-view-inline {
+    border-top: none!important;
+}
+
+.is-unread > .item-box {
+	border-top: 10px solid #64BFFF;
+}
+
+.is-new .column-header {
+  border-bottom: 4px solid #0288D1;
+}
+
+/** MARGINS **/
+
+.column {
+    margin: 0!important;
+}
+
+.app-columns-container {
+    margin: -6px!important;
+}
+
+.tweet-footer.cf {
+    margin-top: 20px !important;
+}
+
+.margin-r--13 {
+    margin-right: 25px !important;
+}
+
+/** SHADOWS **/
+
+.app-search-input, .app-search-fake, .btn-compose, .dropdown-menu {
+    box-shadow: none!important;
+}
+
+.column.is-focused {
+	box-shadow: 0 0 0 5px #424242;
+}
+
+/** FONT **/
+.column-head-title {
+	text-transform: uppercase;
+}
+
+/** SCROLL BARS **/
+
+::-webkit-scrollbar-thumb {
+	background: -webkit-linear-gradient(#E0E0E0, #E0E0E0)!important;
+	border-radius: 0!important;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: -webkit-linear-gradient(#BDBDBD, #BDBDBD)!important;
+}
+
+/** OTHER **/
+
+.js-column-drag-handle .is-movable .column-drag-handle .pull-left .sprite .sprite-drag-vertical {
+    color: transparent!important;
+}
+
+.js-column-back > .column-head-title {
+    text-decoration: none!important;
+}
+
+.js-column-header > .js-column-drag-handle, .js-column-header > .column-drag-handle, .js-column-header > .sprite, .js-column-header > .sprite-drag-vertical {
+    background-image: none!important;
+}
+
+.column-header-link:hover {
+    color: #DDD!important;
+}
+
+.app-nav-link:hover {
+    color: #FAFAFA!important;
+}
+
+.icon, .stream-item, .column-header {
+    -webkit-transition: all .2s!important;
+    -moz-transition: all .2s!important;
+    transition: all .2s!important;
+}
+
+.list-placeholder {
+    text-shadow: none!important;
+}
+
+.needs-scroll-bottom-offset.scroll-styled-h {
+    bottom: 0!important;
+}
+
+.stream-item:hover {
+    -webkit-box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
+    -moz-box-shadow: 0 10 37 -20px rgba(0, 0, 0, 1)!important;
+    box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
+  	/**---------------------------------
+  		WIP HOVER TRANSLATE UPWARDS
+    ------------------------------------
+  	-moz-transform: translate(-2px, -2px);
+    -ms-transform: translate(-2px, -2px);
+    -o-transform: translate(-2px, -2px);
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px) **/
+}
+
+/** --------------------------
+	LOADING WHEELS [BETA]
+-------------------------- **/
+
+.js-signin-ui img {
+    display: none!important;
+}
+
+.js-signin-ui {
+    content: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/White-128.svg")!important;
+}
+
+.spinner-large, .spinner-small, .spinner-small-trans {
+	background-color: transparent;
+  	background: none;
+  	content: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/Blue-128.svg");
+}
+
+.is-inverted-dark .spinner-small, .is-inverted-dark .spinner-large  {
+  	background: none;
+    content: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/White-128.svg");
+}
+
+.gap-chirp-spinner {
+	background-image: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/Blue-128.svg")
+}
+
+.spinner-button-icon-spinner {
+	background: none;
+  	content: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/White-128.svg");
+}
+
+.med-embeditem {
+  	background: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/White-128.svg") no-repeat 50% 50%;
+}
+
+/** --------------------------
+	ICON FONT OVERWRITE [WIP]
+-------------------------- **/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.icon {
+  font-family: 'Material Icons';
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.icon-compose:before {
+	font-family: 'Material Icons';
+	content: "mode_edit";
+}
+.icon-search:before {
+	font-family: 'Material Icons';
+	content: "search";
+}
+.icon-home:before {
+	font-family: 'Material Icons';
+	content: "home";
+}
+.icon-notifications:before {
+	font-family: 'Material Icons';
+	content: "notifications";
+}
+.icon-activity:before {
+	font-family: 'Material Icons';
+	content: "rss_feed";
+}
+.icon-user:before {
+	font-family: 'Material Icons';
+	content: "person";
+}
+.icon-message:before {
+	font-family: 'Material Icons';
+	content: "forum";
+}
+.icon-arrow-r-double:before {
+	font-family: 'Material Icons';
+	content: "chevron_right";
+}
+.icon-arrow-l-double:before {
+	font-family: 'Material Icons';
+	content: "chevron_left";
+}
+.icon-arrow-r:before {
+	font-family: 'Material Icons';
+	content: "chevron_right";
+}
+.icon-arrow-l:before {
+	font-family: 'Material Icons';
+	content: "chevron_left";
+}
+.icon-user-switch:before {
+	font-family: 'Material Icons';
+	content: "supervisor_account";
+}
+.icon-settings:before {
+	font-family: 'Material Icons';
+	content: "settings";
+}
+.icon-sliders:before {
+	font-family: 'Material Icons';
+	content: "list";
+}
+.icon-plus:before {
+	font-family: 'Material Icons';
+	content: "add";
+}
+.icon-content:before {
+  	font-family: 'Material Icons';
+ 	content: "format_quote";
+}
+.icon-info:before {
+  	font-family: 'Material Icons';
+ 	content: "info";
+}
+.icon-image:before {
+  	font-family: 'Material Icons';
+ 	content: "insert_photo";
+}
+.icon-trending:before {
+  	font-family: 'Material Icons';
+ 	content: "whatshot";
+}
+.icon-follow:before {
+  	font-family: 'Material Icons';
+ 	content: "person_add";
+}
+.icon-custom-timeline:before {
+  	font-family: 'Material Icons';
+ 	content: "collections";
+}
+.icon-list:before {
+  	font-family: 'Material Icons';
+ 	content: "list";
+}
+.icon-schedule:before {
+  	font-family: 'Material Icons';
+ 	content: "access_time";
+}
+.icon-close:before {
+  	font-family: 'Material Icons';
+ 	content: "close";
+}
+.icon-clear-timeline:before {
+  	font-family: 'Material Icons';
+ 	content: "clear_all";
+}
+.icon-check:before {
+  	font-family: 'Material Icons';
+ 	content: "check";
+}
+.icon-camera:before {
+  	font-family: 'Material Icons';
+ 	content: "add_a_photo";
+}
+.icon-mark-read:before {
+  	font-family: 'Material Icons';
+ 	content: "markunread_mailbox";
+}
+.icon-mark-read:before {
+  	font-family: 'Material Icons';
+ 	content: "markunread_mailbox";
+}
+.icon-compose-dm:before {
+	font-family: 'Material Icons';
+	content: "border_color";
+}
+.icon-popout:before {
+	font-family: 'Material Icons';
+	content: "open_in_new";
+}
+.icon-compose-list:before {
+	font-family: 'Material Icons';
+	content: "view_list";
+}
+.icon-compose-minigrid:before {
+	font-family: 'Material Icons';
+	content: "view_module";
+}
+.icon-compose-grid:before {
+	font-family: 'Material Icons';
+	content: "account_box";
+}
+.icon-retweet:before {
+	font-family: 'Material Icons';
+	content: "repeat";
+}
+.icon-reply:before {
+	font-family: 'Material Icons';
+	content: "reply";
+}
+.hearty .icon-favorite:before {
+	font-family: 'Material Icons';
+	content: "favorite";
+}
+.icon-more:before {
+	font-family: 'Material Icons';
+	content: "more_horiz";
+}
+
+/** --------------------------
+	TWEET CARDS
+-------------------------- **/
+
+.js-stream-item-content.item-box {
+    margin: 10px !important;
+    margin-bottom: 0 !important;
+    padding: 20px !important;
+    background: #FFF !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 2px!important;
+}
+
+.detail-view-inline-text {
+    background: #FAFAFA!important;
+    border: 5px solid #FAFAFA!important;
+}
