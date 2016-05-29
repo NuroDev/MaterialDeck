@@ -3,8 +3,24 @@
 	"name": "MaterialDeck",
 	"version": "1.0.1",
 	"author": "[MEADOW_DEV]",
+	"default_locale": "en",
 	"description": "MaterialDeck is an extension for Google Chrome and Opera that enhances the appearance of TweetDeck to meet the standards of Google's Material Design",
+	"icons":{
+		"16":"img/icon16.png",
+		"32":"img/icon32.png",
+		"48":"img/icon48.png",
+		"128":"img/icon128.png"
+	},
 	"permissions": [
 		"https://tweetdeck.twitter.com/*"
+	],
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	"web_accessible_resources": [
+		"fonts/*",
+		"img/*",
+		"css/*",
+		"js/*"
 	]
 }
