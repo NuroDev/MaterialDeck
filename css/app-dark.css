@@ -13,7 +13,7 @@ body {
 
 /** SPRITE SHEET **/
 .hearty .sprite {
-	background-image: url("https://i.imgur.com/WhaIoE4.png");
+	background-image: url("../img/spritesheet.png");
 }
 
 /** COLOURS **/
@@ -33,12 +33,12 @@ body {
     color: #EEEEEE!important;
 }
 
-.hearty .icon-favorite-color {
+.hearty .is-favorite .icon-favorite-toggle {
   	/** 500 Pink Colour **/
 	color: #E91E63;
 }
 
-.txt-r-medium-green {
+.is-retweet .icon-retweet-toggle {
   	/** A400 Green  Colour **/
 	color: #00E676;
 }
