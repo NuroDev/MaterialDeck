@@ -5,7 +5,7 @@
 /* MaterialDeck CSS */
 body {
     background-color: #4FC3F7!important;
-    background-image: radial-gradient(#4FC3F7, #4FC3F7)!important;
+    background-image: radial-gradient(#03A9F4, #01579B)!important;
     -webkit-transition: all .2s!important;
     -moz-transition: all .2s!important;
     transition: all .2s!important;
@@ -220,31 +220,31 @@ body {
 }
 
 .js-signin-ui {
-    content: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/White-128.svg")!important;
+    content: url("../img/LoadingWheel-White-128.svg")!important;
 }
 
 .spinner-large, .spinner-small, .spinner-small-trans {
 	background-color: transparent;
   	background: none;
-  	content: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/Blue-128.svg");
+  	content: url("../img/LoadingWheel-Blue-128.svg");
 }
 
 .is-inverted-dark .spinner-small, .is-inverted-dark .spinner-large  {
   	background: none;
-    content: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/White-128.svg");
+    content: url("../img/LoadingWheel-White-128.svg");
 }
 
 .gap-chirp-spinner {
-	background-image: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/Blue-128.svg")
+	background-image: url("../img/LoadingWheel-Blue-128.svg")
 }
 
 .spinner-button-icon-spinner {
 	background: none;
-  	content: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/White-128.svg");
+  	content: url("../img/LoadingWheel-White-128.svg");
 }
 
 .med-embeditem {
-  	background: url("https://dl.dropboxusercontent.com/u/39006034/loadingWheels/White-128.svg") no-repeat 50% 50%;
+  	background: url("../img/LoadingWheel-White-128.svg") no-repeat 50% 50%;
 }
 
 /** --------------------------
@@ -255,12 +255,10 @@ body {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(fonts/MaterialIcons-Regular.woff2) format('woff2'),
-       url(fonts/MaterialIcons-Regular.woff) format('woff'),
-       url(fonts/MaterialIcons-Regular.ttf) format('truetype');
+  src: url(../MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .icon {

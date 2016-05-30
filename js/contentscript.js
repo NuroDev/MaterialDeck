@@ -1,9 +1,12 @@
+var extensionid;
+
+chrome.runtime.sendMessage({method: "getLocalStorage", key: "extensionid"}, function(response) {
+	extensionid = response.data;
+});
+
 $(document).ready(function(){
 
-	var extensionid = chrome.runtime.id;
-
 	console.log("[MaterialDeck] Starting MaterialDeck " + chrome.runtime.getManifest().version + ".");
-	console.log("[MaterialDeck] Extension ID is reported as " + extensionid);
 
 	/** Light Theme Check & Apply **/
 	if ($('link[title=light]').length) {
