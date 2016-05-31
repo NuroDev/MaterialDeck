@@ -1,8 +1,12 @@
-/* TweetDeck Original CSS */
+/** --------------------------------
+  Original Tweetdeck CSS Stylesheet
+---------------------------------**/
 
 @import url("https://ton.twimg.com/tweetdeck-web/web/css/app-light.2db79c379b.css");
 
-/* MaterialDeck CSS */
+/** --------------------
+  MaterialDeck CSS
+---------------------**/
 body {
     background-color: #4FC3F7!important;
     background-image: radial-gradient(#03A9F4, #01579B)!important;
@@ -11,114 +15,198 @@ body {
     transition: all .2s!important;
 }
 
-/** SPRITE SHEET **/
+/** --------------------
+  HEX COLOUR VALUES
+---------------------**/
+/**
+#FFF - White
+transparent - Transparent
+#E91E63 - 500 Pink
+#00E676 - A400 Green
+#29B6F6 - 400 LightBlue
+#03A9F4 - 500 LightBlue
+#2D92D6 - 600 LightBlue(CUSTOM)
+#039BE5 - 600 LightBlue
+#0288D1 - 700 LightBlue
+#FAFAFA - 50 Grey
+#EEEEEE - 200 Grey
+#E0E0E0 - 300 Grey
+#BDBDBD - 400 Grey
+#424242 - 800 Grey
+**/
+
+/** ------------------
+  SPRITESHEET
+-------------------**/
 .hearty .sprite {
 	background-image: url("../img/spritesheet.png");
 }
 
-/** COLOURS **/
+/** ------------------
+  COLOURS
+-------------------**/
 
-.column-number, .column-nav-link:after, .is-new .column-nav-updates {
-  	/** Transparent Colour **/
+.column-number,
+.column-nav-link:after,
+.is-new .column-nav-updates {
     color: transparent!important;
 }
 
-.app-search-fake, .column-nav-item, .column-head-title > span, .column-title-back, .column-header, .column-header-temp, .column-title > .txt-mute, .js-header-action > .js-column-title > .txt-mute, .column-header-link, .nav-user-info .username, .app-nav-link, .app-navigator, .app-nav-tab, .lst-launcher a, .lst-launcher > .is-disabled a, .attribution .txt-sub-antialiased, .attribution .txt-mute .txt-sub-antialiased, .icon-unread-color, .list-placeholder, .title-content > .txt-mute, .is-new .column-type-icon, span.attribution.txt-mute.txt-sub-antialiased {
-    /** White Colour **/
+.app-search-fake,
+.column-nav-item,
+.column-nav-link,
+.column-head-title > span,
+.column-title-back,
+.column-header,
+.column-header-temp,
+.column-title > .txt-mute,
+.js-header-action > .js-column-title > .txt-mute,
+.column-header-link,
+.nav-user-info .username,
+.app-nav-link,
+.app-navigator,
+.app-nav-tab,
+.lst-launcher a,
+.lst-launcher > .is-disabled a,
+.attribution .txt-sub-antialiased,
+.attribution .txt-mute .txt-sub-antialiased,
+.icon-unread-color,
+.list-placeholder,
+.title-content >
+.txt-mute,
+.is-new .column-type-icon,
+span.attribution.txt-mute.txt-sub-antialiased,
+.btn-positive.is-disabled, .btn-positive {
   	color: #FFF!important;
 }
 
 .js-column-back > .column-head-title:hover {
-  	/** 500 LB Colour **/
     color: #03A9F4!important;
 }
-.hearty .is-favorite .icon-favorite-toggle {
-  	/** 500 Pink Colour **/
+
+.hearty .is-favorite .icon-favorite-toggle,
+.hearty .icon-favorite-color {
 	color: #E91E63;
 }
 
-.is-retweet .icon-retweet-toggle {
-  	/** A400 Green  Colour **/
+.is-retweet .icon-retweet-toggle,
+.txt-r-medium-green {
 	color: #00E676;
 }
 
-/** BACKGROUND-COLOURS **/
+/** ------------------
+  BACKGROUND-COLOURS
+-------------------**/
 
-.app-columns-container, .js-column-back > .column-head-title:hover {
-  	/** White BG **/
-    background-color: #FFF!important;
+.app-columns-container,
+.js-column-back > .column-head-title:hover,
+.scroll-conversation,
+.numbered-badge,
+.is-new .column-nav-updates {
+  background-color: #FFF!important;
 }
 
-.app-header, .app-title, .column-nav-item, .column-number, .column-header, .column-header-temp, .app-navigator, .btn-on-blue, .lst-launcher a, .lst-launcher > .is-disabled a, .inline-reply {
-  	/** 500 LB BG **/
+.app-header,
+.app-title,
+.column-nav-item,
+.column-number,
+.column-header,
+.column-header-temp,
+.app-navigator,
+.btn-on-blue,
+.lst-launcher a,
+.lst-launcher > .is-disabled a,
+.inline-reply,
+.btn-positive {
     background-color: #03A9F4!important;
 }
 
-.btn-positive-alt, .btn-fav.s-favorited, .s-following .follow-btn, .bg-r-light-gray {
-  	/** 600 LB BG(CUSTOM) **/
+.btn-positive-alt,
+.btn-fav.s-favorited,
+.s-following .follow-btn,
+.bg-r-light-gray,
+.btn-positive.is-disabled {
     background-color: #2D92D6!important;
 }
 
 .lst-group .selected {
-  	/** 600 LB BG **/
     background-color: #039BE5!important;
 }
 
-.numbered-badge, .btn-compose, .compose, .attach-compose-buttons .tweet-button, .app-search-input, .app-search-fake, .is-new .column-nav-updates  {
-	/** 700 LB BG **/
+.numbered-badge,
+.btn-compose,
+.compose,
+.attach-compose-buttons .tweet-button,
+.app-search-input,
+.app-search-fake,
+.is-new .column-nav-updates  {
   	background-color: #0288D1!important;
 }
 
-.js-column-scroller.js-dropdown-container.column-scroller.scroll-v, .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation, .tweet-detail-wrapper {
-  	/** 200 Grey BG **/
+.column,
+.js-column-scroller.js-dropdown-container.column-scroller.scroll-v,
+.js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
+.tweet-detail-wrapper {
     background: #EEEEEE !important;
 }
 
-.scroll-conversation {
-  	/** White BG **/
-    background: #FFF!important;
-}
-
 .stream-item {
-  	/** Transparent BG **/
  	background-color: transparent;
 }
 
-/** BORDERS **/
+/** ------------------
+  BORDERS
+-------------------**/
 
-.column-scroller .scroll-v .scroll-styled-v, .stream-item.js-stream-item, .tweet-detail-wrapper {
-    border-radius: 0!important;
+.column-scroller .scroll-v .scroll-styled-v,
+.stream-item.js-stream-item,
+.tweet-detail-wrapper {
+  border-radius: 0!important;
 }
 
-.popover, input, textarea, select, .uneditable-input {
-    border-radius: 0!important;
+.popover,
+input,
+textarea,
+select,
+.uneditable-input {
+  border-radius: 0!important;
 }
 
-.numbered-badge, .is-new .column-nav-updates  {
+.numbered-badge,
+.is-new .column-nav-updates {
 	border-radius: 200px;
 }
 
 .with-nav-border-t:before {
-    border-top: 2px solid #FFF!important;
+  border-top: 2px solid #FFF!important;
 }
 
-.lst-launcher a, .lst-launcher > .is-disabled a, .column-scroller, .column, .numbered-badge, .stream-item {
-    border: none!important;
+.lst-launcher a,
+.lst-launcher > .is-disabled a,
+.column-scroller,
+.column,
+.numbered-badge,
+.stream-item,
+.tweet-detail-wrapper,
+.rpl textarea {
+  border: none!important;
 }
 
 .detail-view-inline {
-    border-top: none!important;
+  border-top: none!important;
 }
 
 .is-unread > .item-box {
-	border-top: 10px solid #64BFFF;
+	border-top: 10px solid #29B6F6;
 }
 
 .is-new .column-header {
   border-bottom: 4px solid #0288D1;
 }
 
-/** MARGINS **/
+/** ------------------
+  MARGINS
+-------------------**/
 
 .column {
     margin: 0!important;
@@ -136,9 +224,22 @@ body {
     margin-right: 25px !important;
 }
 
-/** SHADOWS **/
+/** ------------------
+  PADDING
+-------------------**/
+.app-columns {
+  padding: 6px 0 0 6px;
+}
 
-.app-search-input, .app-search-fake, .btn-compose, .dropdown-menu {
+/** ------------------
+  SHADOWS
+-------------------**/
+
+.app-search-input,
+.app-search-fake,
+.btn-compose,
+.dropdown-menu,
+.rpl textarea {
     box-shadow: none!important;
 }
 
@@ -146,12 +247,17 @@ body {
 	box-shadow: 0 0 0 5px #424242;
 }
 
-/** FONT **/
+/** ------------------
+  FONT
+-------------------**/
+
 .column-head-title {
 	text-transform: uppercase;
 }
 
-/** SCROLL BARS **/
+/** ------------------
+  SCROLL BARS
+-------------------**/
 
 ::-webkit-scrollbar-thumb {
 	background: -webkit-linear-gradient(#E0E0E0, #E0E0E0)!important;
@@ -160,8 +266,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background: -webkit-linear-gradient(#BDBDBD, #BDBDBD)!important;
 }
+::-webkit-scrollbar-track:vertical {
+ 	border: none;
+}
 
-/** OTHER **/
+/** ------------------
+  OTHER
+-------------------**/
 
 .js-column-drag-handle .is-movable .column-drag-handle .pull-left .sprite .sprite-drag-vertical {
     color: transparent!important;
@@ -171,19 +282,24 @@ body {
     text-decoration: none!important;
 }
 
-.js-column-header > .js-column-drag-handle, .js-column-header > .column-drag-handle, .js-column-header > .sprite, .js-column-header > .sprite-drag-vertical {
+.js-column-header > .js-column-drag-handle,
+.js-column-header > .column-drag-handle,
+.js-column-header > .sprite,
+.js-column-header > .sprite-drag-vertical {
     background-image: none!important;
 }
 
 .column-header-link:hover {
-    color: #DDD!important;
+    color: #FAFAFA!important;
 }
 
 .app-nav-link:hover {
     color: #FAFAFA!important;
 }
 
-.icon, .stream-item, .column-header {
+.icon,
+.stream-item,
+.column-header {
     -webkit-transition: all .2s!important;
     -moz-transition: all .2s!important;
     transition: all .2s!important;
@@ -199,7 +315,7 @@ body {
 
 .stream-item:hover {
     -webkit-box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
-    -moz-box-shadow: 0 10 37 -20px rgba(0, 0, 0, 1)!important;
+    -moz-box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
     box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
   	/**---------------------------------
   		WIP HOVER TRANSLATE UPWARDS
@@ -216,35 +332,35 @@ body {
 -------------------------- **/
 
 .js-signin-ui img {
-    display: none!important;
+  display: none!important;
 }
 
 .js-signin-ui {
-    content: url("../img/LoadingWheel-White-128.svg")!important;
+  content: url("../img/LoadingWheel-White-128.svg")!important;
 }
 
 .spinner-large, .spinner-small, .spinner-small-trans {
-	background-color: transparent;
-  	background: none;
-  	content: url("../img/LoadingWheel-Blue-128.svg");
+  background-color: transparent;
+  background: none;
+  content: url("../img/LoadingWheel-Blue-128.svg");
 }
 
-.is-inverted-dark .spinner-small, .is-inverted-dark .spinner-large  {
-  	background: none;
-    content: url("../img/LoadingWheel-White-128.svg");
+.is-inverted-dark .spinner-small, .is-inverted-dark .spinner-large {
+  background: none;
+  content: url("../img/LoadingWheel-White-128.svg");
 }
 
 .gap-chirp-spinner {
-	background-image: url("../img/LoadingWheel-Blue-128.svg")
+  background-image: url("../img/LoadingWheel-Blue-128.svg")
 }
 
 .spinner-button-icon-spinner {
-	background: none;
-  	content: url("../img/LoadingWheel-White-128.svg");
+  background: none;
+  content: url("../img/LoadingWheel-White-128.svg");
 }
 
 .med-embeditem {
-  	background: url("../img/LoadingWheel-White-128.svg") no-repeat 50% 50%;
+  background: url("../img/LoadingWheel-White-128.svg") no-repeat 50% 50%;
 }
 
 /** --------------------------
