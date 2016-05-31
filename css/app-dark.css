@@ -76,7 +76,9 @@ transparent - Transparent
 .is-new .column-type-icon,
 span.attribution.txt-mute.txt-sub-antialiased,
 .dropdown-menu [data-action],
-.non-selectable-item {
+.non-selectable-item,
+.is-inverted-dark .account-link,
+.is-inverted-dark {
   	color: #FFF!important;
 }
 
@@ -146,6 +148,7 @@ span.attribution.txt-mute.txt-sub-antialiased,
 
 .app-columns-container,
 .column,
+.is-inverted-dark .stream-item,
 .js-column-scroller.js-dropdown-container.column-scroller.scroll-v,
 .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
 .tweet-detail-wrapper {
