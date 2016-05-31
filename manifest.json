@@ -5,10 +5,10 @@
 	"author": "[MEADOW_DEV]",
 	"description": "MaterialDeck is an extension for Google Chrome/Opera that enhances the appearance of TweetDeck using Google's Material Design",
 	"icons":{
-		"16":"img/icon-1024.png",
-		"32":"img/icon-1024.png",
-		"48":"img/icon-1024.png",
-		"128":"img/icon-1024.png"
+		"16":"img/icon-16.png",
+		"32":"img/icon-32.png",
+		"48":"img/icon-48.png",
+		"128":"img/icon-128.png"
 	},
 	"homepage_url": "https://github.com/Meadowcottage/MaterialDeck",
 	"permissions": [

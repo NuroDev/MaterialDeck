@@ -75,7 +75,12 @@ transparent - Transparent
 .title-content >
 .txt-mute,
 .is-new .column-type-icon,
-span.attribution.txt-mute.txt-sub-antialiased {
+span.attribution.txt-mute.txt-sub-antialiased,
+.column-title,
+.txt-r-dark-gray,
+.account-summary-text > .account-link,
+.startflow-link,
+.txt-r-text-link {
   	color: #FFF!important;
 }
 
@@ -134,6 +139,7 @@ span.attribution.txt-mute.txt-sub-antialiased {
 .numbered-badge,
 .btn-compose,
 .compose,
+.bg-r-light-gray,
 .attach-compose-buttons .tweet-button,
 .app-search-input,
 .app-search-fake,
@@ -149,7 +155,9 @@ span.attribution.txt-mute.txt-sub-antialiased {
     background: #EEEEEE !important;
 }
 
-.stream-item {
+.stream-item,
+.drawer-header:after,
+.account-row-separator-b:after {
  	background-color: transparent;
 }
 
@@ -167,12 +175,14 @@ span.attribution.txt-mute.txt-sub-antialiased {
 input,
 textarea,
 select,
-.uneditable-input {
+.uneditable-input,
+.mdl {
   border-radius: 0!important;
 }
 
 .numbered-badge,
-.is-new .column-nav-updates {
+.is-new .column-nav-updates,
+.avatar {
 	border-radius: 200px;
 }
 
@@ -187,7 +197,9 @@ select,
 .numbered-badge,
 .stream-item,
 .tweet-detail-wrapper,
-.rpl textarea {
+.rpl textarea,
+.drawer-header,
+.compose-header {
   border: none!important;
 }
 
@@ -238,7 +250,8 @@ select,
 .app-search-fake,
 .btn-compose,
 .dropdown-menu,
-.rpl textarea {
+.rpl textarea,
+.mdl {
     box-shadow: none!important;
 }
 
@@ -360,6 +373,10 @@ select,
 
 .med-embeditem {
   background: url("../img/LoadingWheel-White-128.svg") no-repeat 50% 50%;
+}
+
+.is-loaded > .med-embeditem {
+  background: transparent;
 }
 
 /** --------------------------

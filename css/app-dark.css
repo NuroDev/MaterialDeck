@@ -15,6 +15,7 @@ body {
     transition: all .2s!important;
 }
 
+
 /** --------------------
   HEX COLOUR VALUES
 ---------------------**/
@@ -101,7 +102,6 @@ span.attribution.txt-mute.txt-sub-antialiased,
 -------------------**/
 
 .js-column-back > .column-head-title:hover,
-.scroll-conversation,
 .numbered-badge,
 .is-new .column-nav-updates {
     background-color: #FFF!important;
@@ -135,6 +135,7 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .numbered-badge,
 .btn-compose,
 .compose,
+.bg-r-light-gray,
 .attach-compose-buttons .tweet-button,
 .app-search-input,
 .lst-group .selected,
@@ -142,7 +143,8 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .is-new .column-nav-updates,
 .dropdown-menu,
 .column-options,
-.is-options-open .column-settings-link {
+.is-options-open .column-settings-link,
+.scroll-conversation {
   background-color: #424242!important;
 }
 
@@ -151,11 +153,13 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .is-inverted-dark .stream-item,
 .js-column-scroller.js-dropdown-container.column-scroller.scroll-v,
 .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
-.tweet-detail-wrapper {
+.tweet-detail-wrapper{
     background: #757575 !important;
 }
 
-.stream-item {
+.stream-item,
+.drawer-header:after,
+.account-row-separator-b:after {
  	background-color: transparent;
 }
 
@@ -166,24 +170,26 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .column-scroller .scroll-v .scroll-styled-v,
 .stream-item.js-stream-item,
 .tweet-detail-wrapper {
-    border-radius: 0!important;
+  border-radius: 0!important;
 }
 
 .popover,
 input,
 textarea,
 select,
-.uneditable-input {
-    border-radius: 0!important;
+.uneditable-input,
+.mdl {
+  border-radius: 0!important;
 }
 
 .numbered-badge,
-.is-new .column-nav-updates {
-	 border-radius: 200px;
+.is-new .column-nav-updates,
+.avatar {
+	border-radius: 200px;
 }
 
 .with-nav-border-t:before {
-    border-top: 2px solid #FFF!important;
+  border-top: 2px solid #FFF!important;
 }
 
 .lst-launcher a,
@@ -195,7 +201,10 @@ select,
 .tweet-detail-wrapper,
 .facet-type,
 .facet-type:last-child,
-.rpl textarea {
+.rpl textarea,
+.drawer-header,
+.compose-header,
+.search-input .is-focused {
   border: none!important;
 }
 
@@ -250,7 +259,8 @@ select,
 .app-search-fake,
 .btn-compose,
 .dropdown-menu,
-.rpl textarea {
+.rpl textarea,
+.mdl {
     box-shadow: none!important;
 }
 
@@ -372,6 +382,9 @@ select,
 
 .med-embeditem {
   background: url("../img/LoadingWheel-White-128.svg") no-repeat 50% 50%;
+}
+.med-embeditem > .is-loaded {
+  background: transparent;
 }
 
 /** --------------------------
