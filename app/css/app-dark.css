@@ -49,7 +49,8 @@ transparent - Transparent
 
 .column-number,
 .column-nav-link:after,
-.is-new .column-nav-updates {
+.is-new .column-nav-updates,
+.btn-positive > .is-disabled{
     color: transparent!important;
 }
 
@@ -79,7 +80,9 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .dropdown-menu [data-action],
 .non-selectable-item,
 .is-inverted-dark .account-link,
-.is-inverted-dark {
+.is-inverted-dark > .column-title,
+.is-inverted-dark .btn-alt,
+.is-inverted-dark .btn-alt > span .label {
   	color: #FFF!important;
 }
 
@@ -128,7 +131,8 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .s-following .follow-btn,
 .bg-r-light-gray,
 .btn-positive.is-disabled,
-.popover {
+.popover,
+.btn-alt {
     background-color: #616161!important;
 }
 
@@ -204,7 +208,8 @@ select,
 .rpl textarea,
 .drawer-header,
 .compose-header,
-.search-input .is-focused {
+.search-input .is-focused,
+.btn-alt {
   border: none!important;
 }
 
