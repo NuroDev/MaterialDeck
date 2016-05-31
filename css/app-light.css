@@ -75,8 +75,7 @@ transparent - Transparent
 .title-content >
 .txt-mute,
 .is-new .column-type-icon,
-span.attribution.txt-mute.txt-sub-antialiased,
-.btn-positive.is-disabled, .btn-positive {
+span.attribution.txt-mute.txt-sub-antialiased {
   	color: #FFF!important;
 }
 

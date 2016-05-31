@@ -8,8 +8,8 @@
   MaterialDeck CSS
 ---------------------**/
 body {
-    background-color: #212121!important;
-    background-image: radial-gradient(#757575, #212121)!important;
+    background-color: #4FC3F7!important;
+    background-image: radial-gradient(#03A9F4, #01579B)!important;
     -webkit-transition: all .2s!important;
     -moz-transition: all .2s!important;
     transition: all .2s!important;
@@ -75,8 +75,6 @@ transparent - Transparent
 .title-content > .txt-mute,
 .is-new .column-type-icon,
 span.attribution.txt-mute.txt-sub-antialiased,
-.btn-positive.is-disabled,
-.btn-positive,
 .dropdown-menu [data-action],
 .non-selectable-item {
   	color: #FFF!important;
