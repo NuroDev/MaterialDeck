@@ -98,7 +98,6 @@ span.attribution.txt-mute.txt-sub-antialiased,
   BACKGROUND-COLOURS
 -------------------**/
 
-.app-columns-container,
 .js-column-back > .column-head-title:hover,
 .scroll-conversation,
 .numbered-badge,
@@ -145,6 +144,7 @@ span.attribution.txt-mute.txt-sub-antialiased,
   background-color: #424242!important;
 }
 
+.app-columns-container,
 .column,
 .js-column-scroller.js-dropdown-container.column-scroller.scroll-v,
 .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
@@ -547,6 +547,10 @@ select,
 .icon-more:before {
 	font-family: 'Material Icons';
 	content: "more_horiz";
+}
+.icon-play-video {
+  font-family: 'Material Icons';
+	content: "play_circle_outline";
 }
 
 /** --------------------------
