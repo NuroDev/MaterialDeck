@@ -7,7 +7,6 @@ chrome.runtime.sendMessage({method: "getLocalStorage", key: "extensionid"}, func
 $(document).ready(function(){
 
 	console.log("[MaterialDeck] Starting MaterialDeck " + chrome.runtime.getManifest().version + ".");
-	$('head').append( '<link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet' type='text/css'>' );
 
 	/** Light Theme Check & Apply **/
 	if ($('link[title=light]').length) {

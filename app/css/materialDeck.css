@@ -4,8 +4,6 @@
 body {
     background-color: #4FC3F7!important;
     background-image: radial-gradient(#03A9F4, #01579B)!important;
-    font-family: 'Roboto', Helvetica, sans-serif!important;
-    font-weight: 400!important;
     -webkit-transition: all .2s!important;
     -moz-transition: all .2s!important;
     transition: all .2s!important;
