@@ -1,20 +1,9 @@
 /** --------------------------------
-  Original Tweetdeck CSS Stylesheet
+  IMPORTS
 ---------------------------------**/
 
 @import url("https://ton.twimg.com/tweetdeck-web/web/css/app-dark.3b6bb8d70a.css");
-
-/** --------------------
-  MaterialDeck CSS
----------------------**/
-body {
-    background-color: #4FC3F7!important;
-    background-image: radial-gradient(#03A9F4, #01579B)!important;
-    -webkit-transition: all .2s!important;
-    -moz-transition: all .2s!important;
-    transition: all .2s!important;
-}
-
+@import url("materialDeck.css");
 
 /** --------------------
   HEX COLOUR VALUES
@@ -24,24 +13,12 @@ body {
 transparent - Transparent
 #E91E63 - 500 Pink
 #00E676 - A400 Green
-#29B6F6 - 400 LightBlue
-#03A9F4 - 500 LightBlue
-#2D92D6 - 600 LightBlue(CUSTOM)
-#039BE5 - 600 LightBlue
-#0288D1 - 700 LightBlue
 #FAFAFA - 50 Grey
 #EEEEEE - 200 Grey
 #E0E0E0 - 300 Grey
 #BDBDBD - 400 Grey
 #424242 - 800 Grey
 **/
-
-/** ------------------
-  SPRITESHEET
--------------------**/
-.hearty .sprite {
-	background-image: url("../img/spritesheet.png");
-}
 
 /** ------------------
   COLOURS
@@ -82,8 +59,14 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .is-inverted-dark .account-link,
 .is-inverted-dark > .column-title,
 .is-inverted-dark .btn-alt,
-.is-inverted-dark .btn-alt > span .label {
+.is-inverted-dark .btn-alt > span .label,
+.is-inverted-dark p {
   	color: #FFF!important;
+}
+
+a.link-complex > span,
+a.url-ext {
+  color: #03A9F4!important;
 }
 
 .js-column-back > .column-head-title:hover {
@@ -92,12 +75,12 @@ span.attribution.txt-mute.txt-sub-antialiased,
 
 .hearty .is-favorite .icon-favorite-toggle,
 .hearty .icon-favorite-color {
-	color: #E91E63;
+	color: #E91E63!important;
 }
 
 .is-retweet .icon-retweet-toggle,
 .txt-r-medium-green {
-	color: #00E676;
+	color: #00E676!important;
 }
 
 /** ------------------
@@ -122,7 +105,9 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .lst-launcher > .is-disabled a,
 .inline-reply,
 .btn-positive,
-.column-options .button-tray {
+.column-options .button-tray,
+.dropdown-menu .is-selected,
+.toggle-switch-input:checked+.toggle-switch-label:before {
     background-color: #212121!important;
 }
 
@@ -148,7 +133,8 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .dropdown-menu,
 .column-options,
 .is-options-open .column-settings-link,
-.scroll-conversation {
+.scroll-conversation,
+.list-item.is-selected {
   background-color: #424242!important;
 }
 
@@ -157,14 +143,15 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .is-inverted-dark .stream-item,
 .js-column-scroller.js-dropdown-container.column-scroller.scroll-v,
 .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
-.tweet-detail-wrapper{
+.tweet-detail-wrapper,
+.mdl-content {
     background: #757575 !important;
 }
 
 .stream-item,
 .drawer-header:after,
 .account-row-separator-b:after {
- 	background-color: transparent;
+ 	background-color: transparent!important;
 }
 
 /** ------------------
@@ -173,7 +160,12 @@ span.attribution.txt-mute.txt-sub-antialiased,
 
 .column-scroller .scroll-v .scroll-styled-v,
 .stream-item.js-stream-item,
-.tweet-detail-wrapper {
+.tweet-detail-wrapper,
+.toggle-switch-label:before,
+.toggle-switch-label:after,
+.accs .acc-avatar,
+.accs li,
+.btn {
   border-radius: 0!important;
 }
 
@@ -189,7 +181,7 @@ select,
 .numbered-badge,
 .is-new .column-nav-updates,
 .avatar {
-	border-radius: 200px;
+	border-radius: 200px!important;
 }
 
 .with-nav-border-t:before {
@@ -209,7 +201,9 @@ select,
 .drawer-header,
 .compose-header,
 .search-input .is-focused,
-.btn-alt {
+.btn-alt,
+.mdl-content,
+input {
   border: none!important;
 }
 
@@ -218,15 +212,11 @@ select,
 }
 
 .is-unread > .item-box {
-	border-top: 10px solid #212121;
+	border-top: 10px solid #212121!important;
 }
 
 .is-new .column-header {
-  border-bottom: 4px solid #212121;
-}
-
-.caret-inner {
-  border-bottom: 6px solid #616161;
+  border-bottom: 4px solid #212121!important;
 }
 
 /** ------------------
@@ -253,7 +243,10 @@ select,
   PADDING
 -------------------**/
 .app-columns {
-  padding: 6px 0 0 6px;
+  padding: 6px 6px 0 6px!important;
+}
+.padding-vm {
+  padding-top: none!important;
 }
 
 /** ------------------
@@ -265,12 +258,13 @@ select,
 .btn-compose,
 .dropdown-menu,
 .rpl textarea,
-.mdl {
+.mdl,
+.toggle-switch-label:before {
     box-shadow: none!important;
 }
 
 .column.is-focused {
-	box-shadow: 0 0 0 5px #424242;
+	box-shadow: 0 0 0 5px #424242!important;
 }
 
 /** ------------------
@@ -278,7 +272,7 @@ select,
 -------------------**/
 
 .column-head-title {
-	text-transform: uppercase;
+	text-transform: uppercase!important;
 }
 
 /** ------------------
@@ -368,210 +362,29 @@ select,
 .spinner-large, .spinner-small, .spinner-small-trans {
   background-color: transparent;
   background: none;
-  content: url("../img/LoadingWheel-White-128.svg");
+  content: url("../img/LoadingWheel-White-128.svg")!important;
 }
 
 .is-inverted-dark .spinner-small, .is-inverted-dark .spinner-large {
   background: none;
-  content: url("../img/LoadingWheel-White-128.svg");
+  content: url("../img/LoadingWheel-White-128.svg")!important;
 }
 
 .gap-chirp-spinner {
-  background-image: url("../img/LoadingWheel-White-128.svg")
+  background-image: url("../img/LoadingWheel-White-128.svg")!important;
 }
 
 .spinner-button-icon-spinner {
   background: none;
-  content: url("../img/LoadingWheel-White-128.svg");
-}
+  content: url("../img/LoadingWheel-White-128.svg")!important;
+}!important
 
 .med-embeditem {
-  background: url("../img/LoadingWheel-White-128.svg") no-repeat 50% 50%;
-}
-.med-embeditem > .is-loaded {
-  background: transparent;
+  background: url("../img/LoadingWheel-White-128.svg") no-repeat 50% 50%!important;
 }
 
-/** --------------------------
-	ICON FONT OVERWRITE [WIP]
--------------------------- **/
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../MaterialIcons-Regular.eot); /* For IE6-8 */
-  src: url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
-       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
-       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
-}
-
-.icon {
-  font-family: 'Material Icons';
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-}
-.icon-compose:before {
-	font-family: 'Material Icons';
-	content: "mode_edit";
-}
-.icon-search:before {
-	font-family: 'Material Icons';
-	content: "search";
-}
-.icon-home:before {
-	font-family: 'Material Icons';
-	content: "home";
-}
-.icon-notifications:before {
-	font-family: 'Material Icons';
-	content: "notifications";
-}
-.icon-activity:before {
-	font-family: 'Material Icons';
-	content: "rss_feed";
-}
-.icon-user:before {
-	font-family: 'Material Icons';
-	content: "person";
-}
-.icon-message:before {
-	font-family: 'Material Icons';
-	content: "forum";
-}
-.icon-arrow-r-double:before {
-	font-family: 'Material Icons';
-	content: "chevron_right";
-}
-.icon-arrow-l-double:before {
-	font-family: 'Material Icons';
-	content: "chevron_left";
-}
-.icon-arrow-r:before {
-	font-family: 'Material Icons';
-	content: "chevron_right";
-}
-.icon-arrow-l:before {
-	font-family: 'Material Icons';
-	content: "chevron_left";
-}
-.icon-user-switch:before {
-	font-family: 'Material Icons';
-	content: "supervisor_account";
-}
-.icon-settings:before {
-	font-family: 'Material Icons';
-	content: "settings";
-}
-.icon-sliders:before {
-	font-family: 'Material Icons';
-	content: "list";
-}
-.icon-plus:before {
-	font-family: 'Material Icons';
-	content: "add";
-}
-.icon-content:before {
-  	font-family: 'Material Icons';
- 	content: "format_quote";
-}
-.icon-info:before {
-  	font-family: 'Material Icons';
- 	content: "info";
-}
-.icon-image:before {
-  	font-family: 'Material Icons';
- 	content: "insert_photo";
-}
-.icon-trending:before {
-  	font-family: 'Material Icons';
- 	content: "whatshot";
-}
-.icon-follow:before {
-  	font-family: 'Material Icons';
- 	content: "person_add";
-}
-.icon-custom-timeline:before {
-  	font-family: 'Material Icons';
- 	content: "collections";
-}
-.icon-list:before {
-  	font-family: 'Material Icons';
- 	content: "list";
-}
-.icon-schedule:before {
-  	font-family: 'Material Icons';
- 	content: "access_time";
-}
-.icon-close:before {
-  	font-family: 'Material Icons';
- 	content: "close";
-}
-.icon-clear-timeline:before {
-  	font-family: 'Material Icons';
- 	content: "clear_all";
-}
-.icon-check:before {
-  	font-family: 'Material Icons';
- 	content: "check";
-}
-.icon-camera:before {
-  	font-family: 'Material Icons';
- 	content: "add_a_photo";
-}
-.icon-mark-read:before {
-  	font-family: 'Material Icons';
- 	content: "markunread_mailbox";
-}
-.icon-mark-read:before {
-  	font-family: 'Material Icons';
- 	content: "markunread_mailbox";
-}
-.icon-compose-dm:before {
-	font-family: 'Material Icons';
-	content: "border_color";
-}
-.icon-popout:before {
-	font-family: 'Material Icons';
-	content: "open_in_new";
-}
-.icon-compose-list:before {
-	font-family: 'Material Icons';
-	content: "view_list";
-}
-.icon-compose-minigrid:before {
-	font-family: 'Material Icons';
-	content: "view_module";
-}
-.icon-compose-grid:before {
-	font-family: 'Material Icons';
-	content: "account_box";
-}
-.icon-retweet:before {
-	font-family: 'Material Icons';
-	content: "repeat";
-}
-.icon-reply:before {
-	font-family: 'Material Icons';
-	content: "reply";
-}
-.hearty .icon-favorite:before {
-	font-family: 'Material Icons';
-	content: "favorite";
-}
-.icon-more:before {
-	font-family: 'Material Icons';
-	content: "more_horiz";
-}
-.icon-play-video {
-  font-family: 'Material Icons';
-	content: "play_circle_outline";
+.mdl > .is-loaded {
+  background: none!important;
 }
 
 /** --------------------------
