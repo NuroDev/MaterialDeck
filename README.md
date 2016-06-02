@@ -4,7 +4,22 @@
 MaterialDeck is an extension for Google Chrome and Opera that enhances the appearance of TweetDeck to meet the standards of Google's Material Design
 
 ---------------------------------------------------------
+# DOWNLOAD:
+MaterialDeck is free to download at the Google Chrome Web Store.
+
+# [DOWNLOAD HERE](https://chrome.google.com/webstore/detail/materialdeck/mlkdmcekfbgcdacklmegbnhpklgonbdk)
+
+---------------------------------------------------------
 # CHANGELOG:
+
+__V1.0.7:__
+Style Improvements/Bug fixes. Introduction of Roboto Font.
+
+__V1.0.6:__
+Installation bug fix + Code Refactoring
+
+__V1.0.2 -> V1.0.5:__
+Non functioning versions. Disregard.
 
 __V1.0.1:__
 Initial Port Release from FreeStyle Style.
