@@ -11,7 +11,7 @@
 /**
 #FFF - White
 transparent - Transparent
-#E91E63 - 500 Pink
+#F50057 - 500 Pink
 #00E676 - A400 Green
 #FAFAFA - 50 Grey
 #EEEEEE - 200 Grey
@@ -28,8 +28,9 @@ transparent - Transparent
 .column-nav-link:after,
 .is-new .column-nav-updates,
 .btn-positive > .is-disabled,
-.column-drag-handle {
-    color: transparent!important;
+.column-drag-handle,
+.mdl-drag-handle > .sprite-drag {
+  color: transparent!important;
 }
 
 .app-search-fake,
@@ -61,13 +62,20 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .is-inverted-dark > .column-title,
 .is-inverted-dark .btn-alt,
 .is-inverted-dark .btn-alt > span .label,
-.is-inverted-dark p {
-  	color: #FFF!important;
+.is-inverted-dark p,
+.mdl-header,
+.keyboard-shortcut-title,
+.keyboard-shortcut-definition {
+  color: #FFF!important;
+}
+
+.text-like-keyboard-key {
+  color: #424242;
 }
 
 .column-header-link:hover,
 .app-nav-link:hover {
-    color: #FAFAFA!important;
+  color: #FAFAFA!important;
 }
 
 a.link-complex > span,
@@ -76,12 +84,12 @@ a.url-ext {
 }
 
 .js-column-back > .column-head-title:hover {
-    color: #EEEEEE!important;
+  color: #EEEEEE!important;
 }
 
 .hearty .is-favorite .icon-favorite-toggle,
 .hearty .icon-favorite-color {
-	color: #E91E63!important;
+	color: #F50057!important;
 }
 
 .is-retweet .icon-retweet-toggle,
@@ -117,7 +125,8 @@ a.url-ext {
 .btn-positive,
 .column-options .button-tray,
 .dropdown-menu .is-selected,
-.toggle-switch-input:checked+.toggle-switch-label:before {
+.toggle-switch-input:checked+.toggle-switch-label:before,
+.mdl-header {
   background-color: #212121!important;
 }
 
@@ -127,7 +136,8 @@ a.url-ext {
 .bg-r-light-gray,
 .btn-positive.is-disabled,
 .popover,
-.btn-alt {
+.btn-alt,
+.med-tweet {
   background-color: #616161!important;
 }
 
@@ -165,7 +175,8 @@ a.url-ext {
  	background-color: transparent!important;
 }
 
-.js-column-header > .column-drag-handle{
+.js-column-header > .column-drag-handle,
+.mdl-drag-handle > .sprite-drag {
   background-image: none!important;
 }
 
@@ -234,53 +245,13 @@ input {
   border-bottom: 4px solid #212121!important;
 }
 
-.js-stream-item-content.item-box {
+.js-stream-item-content.item-box,
+.med-tweet {
   border-radius: 2px!important;
 }
 
 .detail-view-inline-text {
   border: 5px solid #FAFAFA!important;
-}
-
-/** ------------------
-  MARGINS
--------------------**/
-
-.column {
-  margin: 0!important;
-}
-
-.app-columns-container {
-  margin: -6px!important;
-}
-
-.tweet-footer.cf {
-  margin-top: 20px !important;
-}
-
-.margin-r--13 {
-  margin-right: 25px !important;
-}
-
-.js-stream-item-content.item-box {
-  margin: 10px !important;
-  margin-bottom: 0 !important;
-}
-
-/** ------------------
-  PADDING
--------------------**/
-
-.app-columns {
-  padding: 6px 6px 0 6px!important;
-}
-
-.padding-vm {
-  padding-top: none!important;
-}
-
-.js-stream-item-content.item-box {
-  padding: 20px !important;
 }
 
 /** ------------------
@@ -342,18 +313,6 @@ input {
 }
 ::-webkit-scrollbar-track:vertical {
  	border: none;
-}
-
-/** ------------------
-  TRANSITION
--------------------**/
-
-.icon,
-.stream-item,
-.column-header {
-    -webkit-transition: all .2s!important;
-    -moz-transition: all .2s!important;
-    transition: all .2s!important;
 }
 
 /** --------------------------

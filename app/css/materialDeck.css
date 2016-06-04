@@ -4,9 +4,17 @@
 body {
     background-color: #4FC3F7!important;
     background-image: radial-gradient(#03A9F4, #01579B)!important;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    font-weight: 400;
     -webkit-transition: all .2s!important;
     -moz-transition: all .2s!important;
     transition: all .2s!important;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url(../fonts/Roboto400latin.woff);
 }
 
 /** ------------------
@@ -14,6 +22,63 @@ body {
 -------------------**/
 .hearty .sprite {
 	background-image: url("../img/spritesheet.png")!important;
+}
+
+/** ------------------
+  MARGINS
+-------------------**/
+
+.column {
+  margin: 0!important;
+}
+
+.app-columns-container {
+  margin: -6px!important;
+}
+
+.tweet-footer.cf {
+  margin-top: 20px !important;
+}
+
+.margin-r--13 {
+  margin-right: 25px !important;
+}
+
+.js-stream-item-content.item-box {
+  margin: 10px !important;
+  margin-bottom: 0 !important;
+}
+
+.med-tweet {
+  margin-bottom: 10px;
+}
+
+/** ------------------
+  PADDING
+-------------------**/
+
+.app-columns {
+  padding: 6px 6px 0 6px!important;
+}
+
+.padding-vm {
+  padding-top: none!important;
+}
+
+.js-stream-item-content.item-box {
+  padding: 20px !important;
+}
+
+/** ------------------
+  TRANSITION
+-------------------**/
+
+.icon,
+.stream-item,
+.column-header {
+    -webkit-transition: all .2s!important;
+    -moz-transition: all .2s!important;
+    transition: all .2s!important;
 }
 
 /** --------------------------
