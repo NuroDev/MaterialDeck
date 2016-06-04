@@ -100,8 +100,7 @@ a.url-ext {
 .scroll-conversation,
 .numbered-badge,
 .is-new .column-nav-updates,
-.js-stream-item-content.item-box,
-.med-tweet {
+.js-stream-item-content.item-box {
   background-color: #FFF!important;
 }
 
@@ -230,8 +229,7 @@ input,
   border-bottom: 4px solid #0288D1!important;
 }
 
-.js-stream-item-content.item-box,
-.med-tweet {
+.js-stream-item-content.item-box {
   border-radius: 2px;
 }
 

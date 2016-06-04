@@ -136,8 +136,7 @@ a.url-ext {
 .bg-r-light-gray,
 .btn-positive.is-disabled,
 .popover,
-.btn-alt,
-.med-tweet {
+.btn-alt {
   background-color: #616161!important;
 }
 
@@ -245,8 +244,7 @@ input {
   border-bottom: 4px solid #212121!important;
 }
 
-.js-stream-item-content.item-box,
-.med-tweet {
+.js-stream-item-content.item-box {
   border-radius: 2px!important;
 }
 
