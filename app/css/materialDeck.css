@@ -18,6 +18,15 @@ body {
 }
 
 /** ------------------
+  SCROLLBAR WIDTH
+-------------------**/
+
+.mdl.s-profile::-webkit-scrollbar,.scroll-styled-v::-webkit-scrollbar,.scroll-v::-webkit-scrollbar,.lst-launcher::-webkit-scrollbar,.mtd-nav-drawer::-webkit-scrollbar {
+	width: 6px;
+	pointer-events:all;
+}
+
+/** ------------------
   SPRITESHEET
 -------------------**/
 .hearty .sprite {
@@ -65,6 +74,10 @@ body {
   padding: 20px !important;
 }
 
+#settings-modal > div > .mdl-header  {
+  padding-bottom: 30px;
+}
+
 /** ------------------
   TRANSITION
 -------------------**/
@@ -75,6 +88,14 @@ body {
     -webkit-transition: all .2s!important;
     -moz-transition: all .2s!important;
     transition: all .2s!important;
+}
+
+/** ------------------
+  TEXT
+-------------------**/
+
+.lst-group {
+  text-align: center;
 }
 
 /** --------------------------
@@ -156,7 +177,7 @@ body {
 }
 .icon-sliders:before {
 	font-family: 'Material Icons';
-	content: "list";
+	content: "more_vert";
 }
 .icon-plus:before {
 	font-family: 'Material Icons';

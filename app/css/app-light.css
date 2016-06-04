@@ -74,7 +74,8 @@ span.attribution.txt-mute.txt-sub-antialiased,
 }
 
 a.link-complex > span,
-a.url-ext {
+a.url-ext,
+.is-options-open .column-settings-link {
   color: #03A9F4!important;
 }
 
