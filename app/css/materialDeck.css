@@ -34,6 +34,15 @@ body {
 }
 
 /** ------------------
+  BORDERS
+-------------------**/
+
+.item-box-full-bleed {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/** ------------------
   MARGINS
 -------------------**/
 
@@ -58,6 +67,14 @@ body {
   margin-bottom: 0 !important;
 }
 
+.item-box-full-bleed {
+  margin: 8px -20px -20px -20px;
+}
+
+.compose-account {
+  margin-right: 14px;
+}
+
 /** ------------------
   PADDING
 -------------------**/
@@ -74,8 +91,19 @@ body {
   padding: 20px !important;
 }
 
+.mdl-header {
+  padding: 15px;
+}
+
 #settings-modal > div > .mdl-header  {
   padding-bottom: 30px;
+}
+
+/** ------------------
+  Z-INDEX
+-------------------**/
+.mdl-header {
+  z-index: 20;
 }
 
 /** ------------------
@@ -93,6 +121,10 @@ body {
 /** ------------------
   TEXT
 -------------------**/
+
+.mdl-header-title {
+  padding-left: 24px;
+}
 
 .lst-group {
   text-align: center;

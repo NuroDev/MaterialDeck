@@ -32,7 +32,7 @@ transparent - Transparent
 .column-nav-link:after,
 .is-new .column-nav-updates,
 .column-drag-handle,
-.keyboard-shortcut-list-modal > .mdl-drag-handle > .sprite-drag {
+.mdl-drag-handle > .sprite-drag {
     color: transparent!important;
 }
 
@@ -101,7 +101,8 @@ a.url-ext,
 .scroll-conversation,
 .numbered-badge,
 .is-new .column-nav-updates,
-.js-stream-item-content.item-box {
+.js-stream-item-content.item-box,
+.mdl-content  {
   background-color: #FFF!important;
 }
 
@@ -152,8 +153,7 @@ a.url-ext,
 .column,
 .js-column-scroller.js-dropdown-container.column-scroller.scroll-v,
 .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
-.tweet-detail-wrapper,
-.mdl-content {
+.tweet-detail-wrapper {
   background: #EEEEEE !important;
 }
 
@@ -164,7 +164,7 @@ a.url-ext,
 }
 
 .js-column-header > .column-drag-handle,
-.keyboard-shortcut-list-modal > .mdl-drag-handle > .sprite-drag {
+.mdl-drag-handle > .sprite-drag {
   background-image: none!important;
 }
 
@@ -187,8 +187,7 @@ a.url-ext,
 input,
 textarea,
 select,
-.uneditable-input,
-.mdl {
+.uneditable-input {
   border-radius: 0!important;
 }
 
@@ -231,11 +230,15 @@ input,
 }
 
 .js-stream-item-content.item-box {
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .detail-view-inline-text {
   border: 5px solid #FAFAFA!important;
+}
+
+.reply-triangle {
+  border-color: transparent transparent #03a9f4 transparent;
 }
 
 /** ------------------

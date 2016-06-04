@@ -162,7 +162,8 @@ a.url-ext {
 .is-options-open .column-settings-link,
 .scroll-conversation,
 .list-item.is-selected,
-.js-stream-item-content.item-box {
+.js-stream-item-content.item-box,
+.inline-reply {
   background-color: #37474F!important;
 }
 
@@ -171,14 +172,14 @@ a.url-ext {
 .is-inverted-dark .stream-item,
 .js-column-scroller.js-dropdown-container.column-scroller.scroll-v,
 .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
-.tweet-detail-wrapper,
-.mdl-content {
+.tweet-detail-wrapper {
   background: #546E7A !important;
 }
 
 .stream-item,
 .drawer-header:after,
-.account-row-separator-b:after {
+.account-row-separator-b:after,
+.mdl-content {
  	background-color: transparent!important;
 }
 
@@ -262,6 +263,10 @@ input {
 
 .caret-inner {
   border-bottom: 6px solid #455a64;
+}
+
+.reply-triangle {
+  border-color: transparent;
 }
 
 /** ------------------
