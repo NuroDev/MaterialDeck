@@ -111,7 +111,8 @@ a.url-ext {
 
 .js-column-back > .column-head-title:hover,
 .numbered-badge,
-.is-new .column-nav-updates {
+.is-new .column-nav-updates,
+.mdl-content {
   background-color: #FFF!important;
 }
 
@@ -178,8 +179,7 @@ a.url-ext {
 
 .stream-item,
 .drawer-header:after,
-.account-row-separator-b:after,
-.mdl-content {
+.account-row-separator-b:after {
  	background-color: transparent!important;
 }
 

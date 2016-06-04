@@ -29,7 +29,8 @@ body {
 /** ------------------
   SPRITESHEET
 -------------------**/
-.hearty .sprite {
+.hearty .sprite,
+.hearty .fullname-badged:before {
 	background-image: url("../img/spritesheet.png")!important;
 }
 
@@ -124,10 +125,6 @@ body {
 
 .mdl-header-title {
   padding-left: 24px;
-}
-
-.lst-group {
-  text-align: center;
 }
 
 /** --------------------------
