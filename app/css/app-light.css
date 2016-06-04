@@ -31,7 +31,8 @@ transparent - Transparent
 
 .column-number,
 .column-nav-link:after,
-.is-new .column-nav-updates {
+.is-new .column-nav-updates,
+.column-drag-handle {
     color: transparent!important;
 }
 
@@ -64,6 +65,11 @@ span.attribution.txt-mute.txt-sub-antialiased,
 .startflow-link,
 .txt-r-text-link {
   	color: #FFF!important;
+}
+
+.column-header-link:hover,
+.app-nav-link:hover {
+    color: #FAFAFA!important;
 }
 
 a.link-complex > span,
@@ -110,7 +116,7 @@ a.url-ext {
 .btn-positive,
 .dropdown-menu .is-selected,
 .toggle-switch-input:checked+.toggle-switch-label:before {
-    background-color: #03A9F4!important;
+  background-color: #03A9F4!important;
 }
 
 .btn-positive-alt,
@@ -118,11 +124,11 @@ a.url-ext {
 .s-following .follow-btn,
 .bg-r-light-gray,
 .btn-positive.is-disabled {
-    background-color: #2D92D6!important;
+  background-color: #2D92D6!important;
 }
 
 .lst-group .selected {
-    background-color: #039BE5!important;
+  background-color: #039BE5!important;
 }
 
 .numbered-badge,
@@ -134,7 +140,7 @@ a.url-ext {
 .app-search-fake,
 .is-new .column-nav-updates,
 .list-item.is-selected  {
-  	background-color: #0288D1!important;
+  background-color: #0288D1!important;
 }
 
 .app-columns-container,
@@ -143,13 +149,17 @@ a.url-ext {
 .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
 .tweet-detail-wrapper,
 .mdl-content {
-    background: #EEEEEE !important;
+  background: #EEEEEE !important;
 }
 
 .stream-item,
 .drawer-header:after,
 .account-row-separator-b:after {
  	background-color: transparent!important;
+}
+
+.js-column-header > .column-drag-handle {
+  background-image: none!important;
 }
 
 /** ------------------
@@ -261,12 +271,28 @@ input {
 	box-shadow: 0 0 0 5px #424242!important;
 }
 
+.stream-item:hover,
+.js-stream-item-content.item-box,
+.dropdown-menu {
+    -webkit-box-shadow: 0px 10px 40px -20px rgba(0,0,0,1)!important;
+    -moz-box-shadow: 0px 10px 40px -20px rgba(0,0,0,1)!important;
+    box-shadow: 0px 10px 40px -20px rgba(0,0,0,1)!important;
+}
+
 /** ------------------
-  FONT
+  TEXT
 -------------------**/
 
 .column-head-title {
 	text-transform: uppercase!important;
+}
+
+.js-column-back > .column-head-title {
+    text-decoration: none!important;
+}
+
+.list-placeholder {
+    text-shadow: none!important;
 }
 
 /** ------------------
@@ -285,31 +311,8 @@ input {
 }
 
 /** ------------------
-  OTHER
+  TRANSITION
 -------------------**/
-
-.js-column-drag-handle .is-movable .column-drag-handle .pull-left .sprite .sprite-drag-vertical {
-    color: transparent!important;
-}
-
-.js-column-back > .column-head-title {
-    text-decoration: none!important;
-}
-
-.js-column-header > .js-column-drag-handle,
-.js-column-header > .column-drag-handle,
-.js-column-header > .sprite,
-.js-column-header > .sprite-drag-vertical {
-    background-image: none!important;
-}
-
-.column-header-link:hover {
-    color: #FAFAFA!important;
-}
-
-.app-nav-link:hover {
-    color: #FAFAFA!important;
-}
 
 .icon,
 .stream-item,
@@ -319,27 +322,18 @@ input {
     transition: all .2s!important;
 }
 
-.list-placeholder {
-    text-shadow: none!important;
-}
+/** --------------------------
+	HOVER TRANSLATE UPWARDS [WIP]
+-------------------------- **/
 
-.needs-scroll-bottom-offset.scroll-styled-h {
-    bottom: 0!important;
-}
-
-.stream-item:hover {
-    -webkit-box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
-    -moz-box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
-    box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
-  	/**---------------------------------
-  		WIP HOVER TRANSLATE UPWARDS
-    ------------------------------------
-  	-moz-transform: translate(-2px, -2px);
-    -ms-transform: translate(-2px, -2px);
-    -o-transform: translate(-2px, -2px);
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px) **/
-}
+/**.stream-item:hover,
+.js-stream-item-content.item-box {
+  -moz-transform: translate(-2px, -2px);
+  -ms-transform: translate(-2px, -2px);
+  -o-transform: translate(-2px, -2px);
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px)
+}**/
 
 /** --------------------------
 	LOADING WHEELS [BETA]

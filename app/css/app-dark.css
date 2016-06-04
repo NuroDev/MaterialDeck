@@ -27,7 +27,8 @@ transparent - Transparent
 .column-number,
 .column-nav-link:after,
 .is-new .column-nav-updates,
-.btn-positive > .is-disabled{
+.btn-positive > .is-disabled,
+.column-drag-handle {
     color: transparent!important;
 }
 
@@ -64,6 +65,11 @@ span.attribution.txt-mute.txt-sub-antialiased,
   	color: #FFF!important;
 }
 
+.column-header-link:hover,
+.app-nav-link:hover {
+    color: #FAFAFA!important;
+}
+
 a.link-complex > span,
 a.url-ext {
   color: #03A9F4!important;
@@ -90,7 +96,7 @@ a.url-ext {
 .js-column-back > .column-head-title:hover,
 .numbered-badge,
 .is-new .column-nav-updates {
-    background-color: #FFF!important;
+  background-color: #FFF!important;
 }
 
 .app-header,
@@ -108,7 +114,7 @@ a.url-ext {
 .column-options .button-tray,
 .dropdown-menu .is-selected,
 .toggle-switch-input:checked+.toggle-switch-label:before {
-    background-color: #212121!important;
+  background-color: #212121!important;
 }
 
 .btn-positive-alt,
@@ -118,7 +124,7 @@ a.url-ext {
 .btn-positive.is-disabled,
 .popover,
 .btn-alt {
-    background-color: #616161!important;
+  background-color: #616161!important;
 }
 
 .numbered-badge,
@@ -145,13 +151,17 @@ a.url-ext {
 .js-detail-container.js-dropdown-container.column-scroller.scroll-v.scroll-conversation,
 .tweet-detail-wrapper,
 .mdl-content {
-    background: #757575 !important;
+  background: #757575 !important;
 }
 
 .stream-item,
 .drawer-header:after,
 .account-row-separator-b:after {
  	background-color: transparent!important;
+}
+
+.js-column-header > .column-drag-handle{
+  background-image: none!important;
 }
 
 /** ------------------
@@ -267,12 +277,28 @@ input {
 	box-shadow: 0 0 0 5px #424242!important;
 }
 
+.stream-item:hover,
+.js-stream-item-content.item-box,
+.dropdown-menu {
+    -webkit-box-shadow: 0px 10px 40px -20px rgba(0,0,0,1)!important;
+    -moz-box-shadow: 0px 10px 40px -20px rgba(0,0,0,1)!important;
+    box-shadow: 0px 10px 40px -20px rgba(0,0,0,1)!important;
+}
+
 /** ------------------
-  FONT
+  TEXT
 -------------------**/
 
 .column-head-title {
 	text-transform: uppercase!important;
+}
+
+.js-column-back > .column-head-title {
+    text-decoration: none!important;
+}
+
+.list-placeholder {
+    text-shadow: none!important;
 }
 
 /** ------------------
@@ -291,31 +317,8 @@ input {
 }
 
 /** ------------------
-  OTHER
+  TRANSITION
 -------------------**/
-
-.js-column-drag-handle .is-movable .column-drag-handle .pull-left .sprite .sprite-drag-vertical {
-    color: transparent!important;
-}
-
-.js-column-back > .column-head-title {
-    text-decoration: none!important;
-}
-
-.js-column-header > .js-column-drag-handle,
-.js-column-header > .column-drag-handle,
-.js-column-header > .sprite,
-.js-column-header > .sprite-drag-vertical {
-    background-image: none!important;
-}
-
-.column-header-link:hover {
-    color: #FAFAFA!important;
-}
-
-.app-nav-link:hover {
-    color: #FAFAFA!important;
-}
 
 .icon,
 .stream-item,
@@ -325,27 +328,18 @@ input {
     transition: all .2s!important;
 }
 
-.list-placeholder {
-    text-shadow: none!important;
-}
+/** --------------------------
+	HOVER TRANSLATE UPWARDS [WIP]
+-------------------------- **/
 
-.needs-scroll-bottom-offset.scroll-styled-h {
-    bottom: 0!important;
-}
-
-.stream-item:hover {
-    -webkit-box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
-    -moz-box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
-    box-shadow: 0 10 37 -20 rgba(0, 0, 0, 1)!important;
-  	/**---------------------------------
-  		WIP HOVER TRANSLATE UPWARDS
-    ------------------------------------
-  	-moz-transform: translate(-2px, -2px);
-    -ms-transform: translate(-2px, -2px);
-    -o-transform: translate(-2px, -2px);
-    -webkit-transform: translate(-2px, -2px);
-    transform: translate(-2px, -2px) **/
-}
+/**.stream-item:hover,
+.js-stream-item-content.item-box {
+  -moz-transform: translate(-2px, -2px);
+  -ms-transform: translate(-2px, -2px);
+  -o-transform: translate(-2px, -2px);
+  -webkit-transform: translate(-2px, -2px);
+  transform: translate(-2px, -2px)
+}**/
 
 /** --------------------------
 	LOADING WHEELS [BETA]
