@@ -3,7 +3,7 @@
 ---------------------------------**/
 
 @import url("https://ton.twimg.com/tweetdeck-web/web/css/app-light.2db79c379b.css");
-@import url("materialDeck.min.css");
+@import url('materialDeck.min.css');
 
 /** --------------------
   HEX COLOUR VALUES
@@ -248,7 +248,6 @@ input,
 .app-search-input,
 .app-search-fake,
 .btn-compose,
-.dropdown-menu,
 .rpl textarea,
 .mdl,
 .toggle-switch-label:before {

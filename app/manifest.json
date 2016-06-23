@@ -2,21 +2,21 @@
 "manifest_version": 2,
 	"name": "MaterialDeck",
 	"short_name": "MaterialDeck",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"author": "[MEADOW_DEV]",
 	"description": "MaterialDeck is an extension for Google Chrome/Opera that enhances the appearance of TweetDeck using Google's Material Design",
+	"homepage_url": "https://github.com/Meadowcottage/MaterialDeck",
 	"icons":{
 		"16":"img/icon-16.png",
 		"32":"img/icon-32.png",
 		"48":"img/icon-48.png",
 		"128":"img/icon-128.png"
 	},
-	"homepage_url": "https://github.com/Meadowcottage/MaterialDeck",
 	"permissions": [
 		"https://tweetdeck.twitter.com/*"
 	],
 	"background": {
-		"scripts": ["js/background.js"]
+		"scripts": ["js/background.min.js"]
 	},
 	"web_accessible_resources": [
 		"fonts/*",
@@ -27,7 +27,7 @@
 	"content_scripts": [
 			{
 			 "matches": ["https://tweetdeck.twitter.com/*"],
-			 "js": ["js/jquery-2.2.4.min.js", "js/contentscript.js"],
+			 "js": ["js/jquery-2.2.4.min.js", "js/contentscript.min.js"],
 			 "run_at" : "document_start"
 			}
 	]

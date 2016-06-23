@@ -22,8 +22,8 @@ body {
 -------------------**/
 
 .mdl.s-profile::-webkit-scrollbar,.scroll-styled-v::-webkit-scrollbar,.scroll-v::-webkit-scrollbar,.lst-launcher::-webkit-scrollbar,.mtd-nav-drawer::-webkit-scrollbar {
-	width: 6px;
-	pointer-events:all;
+	width: 8px!important;
+	pointer-events:all!important;
 }
 
 /** ------------------
@@ -34,13 +34,29 @@ body {
 	background-image: url("../img/spritesheet.png")!important;
 }
 
+.gap-chirp:before,
+.gap-chirp:after {
+  background-image: none;
+}
+
 /** ------------------
   BORDERS
 -------------------**/
 
 .item-box-full-bleed {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px!important;
+  border-bottom-right-radius: 2px!important;
+}
+
+/**.js-stream-item-content.item-box**/
+
+.is-favorite.tweet-dogear > .js-stream-item-content.item-box,
+.is-favorite .tweet-dogear > .js-stream-item-content.item-box {
+  border-right: 3px solid #F50057!important;
+}
+
+.is-retweet .tweet-dogear > .js-stream-item-content.item-box {
+  border-left: 3px solid #00E676!important;
 }
 
 /** ------------------
@@ -69,11 +85,11 @@ body {
 }
 
 .item-box-full-bleed {
-  margin: 8px -20px -20px -20px;
+  margin: 8px -20px -20px -20px!important;
 }
 
 .compose-account {
-  margin-right: 14px;
+  margin-right: 10px!important;
 }
 
 /** ------------------
@@ -93,18 +109,22 @@ body {
 }
 
 .mdl-header {
-  padding: 15px;
+  padding: 15px!important;
 }
 
 #settings-modal > div > .mdl-header  {
-  padding-bottom: 30px;
+  padding-bottom: 30px!important;
+}
+
+.gap-chirp:before {
+  position: fixed;
 }
 
 /** ------------------
   Z-INDEX
 -------------------**/
 .mdl-header {
-  z-index: 20;
+  z-index: 20!important;
 }
 
 /** ------------------
@@ -124,7 +144,7 @@ body {
 -------------------**/
 
 .mdl-header-title {
-  padding-left: 24px;
+  padding-left: 24px!important;
 }
 
 /** --------------------------
@@ -311,4 +331,8 @@ body {
 .icon-share:before {
   font-family: 'Material Icons';
 	content: "share";
+}
+.icon-user-dd:before {
+  font-family: 'Material Icons';
+	content: "person";
 }

@@ -6,7 +6,7 @@ chrome.runtime.sendMessage({method: "getLocalStorage", key: "extensionid"}, func
 
 $(document).ready(function(){
 
-	console.log("[MaterialDeck] Starting MaterialDeck " + chrome.runtime.getManifest().version + ".");
+	console.log("[MaterialDeck] Starting MaterialDeck-" + chrome.runtime.getManifest().version + ".");
 
 	/** Light Theme Check & Apply **/
 	if ($('link[title=light]').length) {

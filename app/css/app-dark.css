@@ -237,7 +237,8 @@ select,
 .search-input .is-focused,
 .btn-alt,
 .mdl-content,
-input {
+input,
+.accs li {
   border: none!important;
 }
 
@@ -276,7 +277,6 @@ input {
 .app-search-input,
 .app-search-fake,
 .btn-compose,
-.dropdown-menu,
 .rpl textarea,
 .mdl,
 .toggle-switch-label:before {
