@@ -83,8 +83,8 @@ a.url-ext,
     color: #03A9F4!important;
 }
 
-.hearty .is-favorite .icon-favorite-toggle,
-.hearty .icon-favorite-color {
+.is-favorite .icon-favorite-toggle,
+.icon-favorite-color {
 	color: #F50057!important;
 }
 

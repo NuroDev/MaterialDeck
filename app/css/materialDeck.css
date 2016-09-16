@@ -29,8 +29,8 @@ body {
 /** ------------------
   SPRITESHEET
 -------------------**/
-.hearty .sprite,
-.hearty .fullname-badged:before {
+.sprite,
+.fullname-badged:before {
 	background-image: url("../img/spritesheet.png")!important;
 }
 
@@ -312,7 +312,7 @@ body {
 	font-family: 'Material Icons';
 	content: "reply";
 }
-.hearty .icon-favorite:before {
+.icon-favorite:before {
 	font-family: 'Material Icons';
 	content: "favorite";
 }

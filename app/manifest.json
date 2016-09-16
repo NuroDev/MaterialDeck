@@ -27,7 +27,7 @@
 	"content_scripts": [
 			{
 			 "matches": ["https://tweetdeck.twitter.com/*"],
-			 "js": ["js/jquery-2.2.4.min.js", "js/contentscript.min.js"],
+			 "js": ["js/jquery-2.2.4.min.js", "js/contentscript.js"],
 			 "run_at" : "document_start"
 			}
 	]
