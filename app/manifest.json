@@ -2,7 +2,7 @@
 "manifest_version": 2,
 	"name": "MaterialDeck",
 	"short_name": "MaterialDeck",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"author": "[MEADOW_DEV]",
 	"description": "MaterialDeck is an extension for Google Chrome/Opera that enhances the appearance of TweetDeck using Google's Material Design",
 	"homepage_url": "https://github.com/Meadowcottage/MaterialDeck",
