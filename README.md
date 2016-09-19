@@ -12,21 +12,6 @@
 ## Downloads
 > Downloads can be found on the [Chrome Web Store](https://chrome.google.com/webstore/detail/materialdeck/mlkdmcekfbgcdacklmegbnhpklgonbdk)
 
-## CHANGELOG:
-__V1.0.7 -> V1.1.0:__
-> General style Improvements/Bug fixes.
-
-__V1.0.7:__
-> Style Improvements/Bug fixes. Introduction of Roboto Font.
-
-__V1.0.6:__
->
-__V1.0.2 -> V1.0.5:__
-> Non functioning versions. Disregard.
-
-__V1.0.1:__
-> Initial Port Release from FreeStyle Style.
-
 ## License
 
 This program is free software: you can redistribute it and/or modify
