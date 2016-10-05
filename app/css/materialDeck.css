@@ -18,6 +18,14 @@ body {
 }
 
 /** ------------------
+  Heart visibility fix:
+-------------------**/
+article > footer > ul > li > i > .is-invisible,
+i.icon.icon-favorite.icon-favorite-toggle.txt-right.is-invisible {
+  visibility: visible!important;
+}
+
+/** ------------------
   SCROLLBAR WIDTH
 -------------------**/
 
