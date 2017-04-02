@@ -1,8 +1,9 @@
 <img src="https://i.imgur.com/TNXdZHE.png" align="left" width="192px" height="192px"/>
 <img align="left" width="0" height="192px" hspace="10"/>
 
-# MaterialDeck
+# MaterialDeck [DEPRECATED]
 > MaterialDeck is an extension for Google Chrome and Opera that enhances the appearance of TweetDeck to meet the standards of Google's Material Design.
+> Material Deck is no longer under active development. Tweetdeck has too many style updates that keeping up to date with them all has proved too much of a maintenance issue.
 
  [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=bendixon50%40gmail%2ecom&item_name=Tip%20for%20Meadowcottage&currency_code=GBP) [![Downloads](https://img.shields.io/chrome-web-store/d/mlkdmcekfbgcdacklmegbnhpklgonbdk.svg?style=flat-square)](https://chrome.google.com/webstore/detail/materialdeck/mlkdmcekfbgcdacklmegbnhpklgonbdk) [![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=flat-square)](http://www.gnu.org/licenses/)
 
